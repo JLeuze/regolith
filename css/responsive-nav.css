@@ -1,0 +1,144 @@
+/*! responsive-nav.js v1.0.15 by @viljamis */
+#nav-toggle {
+  display: none;
+}
+.clear {
+  clear: both;
+}
+@media screen and (max-width: 782px) {
+  .main-navigation {
+    position: static;
+  }
+  #content {
+    padding: 0;
+  }
+  .main-navigation .stack-wrapper {
+    padding: 0;
+  }
+  .site-branding {
+    padding: 20px 0 0 0;
+    width: 70%;
+  }
+  .site-title {
+    padding: 0 0 0 30px;
+  }
+  .site-description {
+    height: 0;
+    opacity: 0;
+  }
+  #primary-menu {
+    background: #e8e8e8;
+    display: none;
+  }
+  .menu-primary-menu-container {
+    float: none;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .js #primary-menu.closed {
+    max-height: 0;
+  }
+  #primary-menu.closed {
+    display: none;
+    max-height: 0;
+  }
+  .js #primary-menu {
+    background: #e8e8e8;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    float: none;
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    zoom: 1;
+  }
+  #nav-toggle {
+    color: #333;
+    display: block;
+    text-decoration: none;
+    float: right;
+    line-height: 2em;
+    padding: 0 30px;
+    transition: all 0.4s ease;
+  } 
+  #nav-toggle span {
+    display: inline-block;
+    text-indent: -9999px;
+  }
+  #nav-toggle .genericon-menu {
+    font-size: 26px;
+  }
+  #nav-toggle:hover {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+  }
+  #primary-menu ul,
+  #primary-menu ul ul {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    width: 100%;
+    display: block;
+    float: none;
+    list-style: none;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  #primary-menu ul#menu-header-menu {
+    padding: 0 2%;
+    width: 96%;
+  }
+  #primary-menu li {
+    display: none;
+    float: none;
+    width: 100%;
+  }
+  #primary-menu li {
+    display: block;
+  }
+  #primary-menu li a {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  #primary-menu li a {
+    background: none !important;
+    border-bottom: solid 1px #ccc;
+    color: #333;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 15px 30px;
+    text-align: left;
+    width: 100%;
+  }
+  #primary-menu li a:hover {
+    background: #fff !important;
+    color: #333;
+    text-decoration: none;
+  }
+  #primary-menu li li a {
+    background: none;
+    padding: 15px 30px 15px 50px;
+    width: 100%;
+  }
+  #primary-menu li li li a {
+    padding: 15px 30px 15px 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .site-branding {
+    padding: 10px 0 0 0;
+    width: 60%;
+  }
+  .site-title {
+    font-size: 20px;
+  }
+}
